@@ -1,0 +1,26 @@
+#search.invalid {
+  background-color: red;
+}
+
+#themes > li {
+  list-style-type: none;
+  display: inline-block;
+  max-width: 300px;
+}
+
+#themes > li > a > img {
+  position: relative;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#themes > li > a::after {
+  content: attr(data-title);
+  display: block;
+  text-align: center;
+  height: 1em;
+}
+
+#themes > [data-matching="false"] {
+  display: none;
+}

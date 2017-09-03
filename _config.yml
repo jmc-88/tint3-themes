@@ -1,0 +1,11 @@
+# Site settings
+title: tint3 themes
+baseurl: "/tint3-themes"
+url: "https://jmc-88.github.io"
+github_username: jmc-88
+github_project: tint3-themes
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude: ["Gemfile"]

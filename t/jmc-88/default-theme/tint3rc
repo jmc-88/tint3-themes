@@ -1,0 +1,121 @@
+# Default tint3 configuration file.
+#
+# For information on manually configuring tint3 see:
+#   https://github.com/jmc-88/tint3
+
+# {{{ backgrounds
+# ID 1
+rounded = 0
+border_width = 0
+background_color = #000000 80
+border_color = #000000 0
+
+# ID 2
+rounded = 0
+border_width = 0
+background_color = #000000 0
+background_color_hover = #7f7f7f 40
+background_color_pressed = #7f7f7f 70
+border_color = #000000 0
+
+# ID 3
+rounded = 0
+border_width = 0
+background_color = #7f7f7f 80
+border_color = #000000 0
+
+# ID 4
+rounded = 0
+border_width = 0
+background_color = #3f3f3f 90
+border_color = #000000 0
+# }}} backgrounds
+
+# {{{ panel
+panel_monitor = all
+panel_position =  bottom center horizontal
+panel_size = 100% 40
+panel_margin = 0 0
+panel_padding = 0 0 0
+panel_dock = 0
+wm_menu = 1
+panel_layer = normal
+panel_background_id = 1
+# }}} panel
+
+# {{{ taskbar
+taskbar_mode = single_desktop
+taskbar_padding = 0 0 5
+taskbar_background_id = 0
+taskbar_active_background_id = 0
+# }}} taskbar
+
+# {{{ tasks
+urgent_nb_of_blink = 20
+task_icon = 1
+task_text = 0
+task_centered = 1
+task_maximum_size = 48 30
+task_padding = 9 8 0
+task_background_id = 2
+task_active_background_id = 3
+task_urgent_background_id = 2
+task_iconified_background_id = 2
+# }}} tasks
+
+# {{{ task icons
+task_icon_asb = 100 0 0
+task_active_icon_asb = 100 0 0
+task_urgent_icon_asb = 100 0 0
+task_iconified_icon_asb = 100 0 0
+# }}} task icons
+
+# {{{ system tray
+systray = 1
+systray_padding = 0 2 6
+systray_sort = left2right
+systray_background_id = 0
+systray_icon_size = 22
+systray_icon_asb = 100 0 0
+# }}} system tray
+
+# {{{ battery
+battery = 1
+battery_hide = 99
+battery_low_status = 25
+battery_low_cmd = notify-send --app-name=tint3 --expire-time=-1 --icon=dialog-warning "Battery level is <b>critically low</b>. Please connect your charger as soon as possible."
+battery_padding = 10 6
+battery_background_id = 0
+bat1_font = Droid Sans Bold 10
+bat2_font = Droid Sans 10
+battery_font_color = #dcdcdc 100
+# }}} battery
+
+# {{{ clock
+time1_format = %H:%M
+time1_font = Droid Sans Bold 10
+clock_font_color = #dcdcdc 100
+clock_padding = 10 6
+clock_background_id = 0
+clock_lclick_command = gsimplecal
+# }}} clock
+
+# {{{ tooltips
+tooltip = 1
+tooltip_padding = 2 2
+tooltip_show_timeout = 0.0
+tooltip_hide_timeout = 0.0
+tooltip_background_id = 4
+tooltip_font = Droid Sans 10
+tooltip_font_color = #dcdcdc 100
+# }}} tooltips
+
+# {{{ mouse
+mouse_middle = none
+mouse_right = close
+mouse_scroll_up = toggle
+mouse_scroll_down = iconify
+mouse_effects = 1
+mouse_hover_icon_asb = 100 0 25
+mouse_pressed_icon_asb = 100 0 -25
+# }}} mouse
