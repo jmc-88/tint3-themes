@@ -1,6 +1,19 @@
+html,
+body {
+  overflow: auto;
+}
+
 body {
   max-width: 1024px;
   margin: auto;
+}
+
+body > main {
+  margin-top: 100px;
+}
+
+footer {
+  font-size: small;
 }
 
 #search.invalid {

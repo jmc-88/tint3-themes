@@ -7,11 +7,51 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/picnic.min.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <script async src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
   </head>
   <body>
-    {{content}}
+    <nav>
+      <a class="brand">
+        <span>tint3 themes</span>
+      </a>
+
+      <div class="menu">
+        <a href="https://github.com/jmc-88/tint3-themes"
+           target="tint3-themes-github" class="pseudo button">
+          <i class="fa fa-github" aria-hidden="true"></i>
+          &nbsp;
+          GitHub
+        </a>
+        <a href="https://github.com/jmc-88/tint3-themes/blob/gh-pages/README.md#how-to-contribute-a-new-theme"
+           target="tint3-themes-readme" class="button">
+          <i class="fa fa-code-fork" aria-hidden="true"></i>
+          &nbsp;
+          Add your theme!
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      {{content}}
+    </main>
+
+    <!--
+      This footer is temporarily disabled because its positioning is messed up.
+    -->
+    <!-- footer>
+      <div>
+        <i class="fa fa-font-awesome" aria-hidden="true"></i>
+        &nbsp;
+        Font Awesome licensed under the <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>.
+      </div>
+      <div>
+        <i class="fa fa-css3" aria-hidden="true"></i>
+        &nbsp;
+        Picnic CSS licensed under the <a href="https://github.com/franciscop/picnic/blob/master/LICENSE">MIT license</a>.
+      </div>
+    </footer -->
   </body>
 </html>

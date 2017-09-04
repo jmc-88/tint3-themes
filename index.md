@@ -1,8 +1,7 @@
 ---
 layout: index
+title: tint3 themes
 ---
-
-# tint3 themes
 
 <input id="search" type="text" placeholder="Search for themes...">
 
