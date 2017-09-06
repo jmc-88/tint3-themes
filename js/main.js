@@ -97,30 +97,5 @@
   getJSON("/tint3-themes/repository.json", function(data) {
     console.log("Succesfully loaded repository.");
     repository = data;
-
-    Object.getOwnPropertyNames(repository).forEach(function(author) {
-      Object.getOwnPropertyNames(repository[author]).forEach(function(theme) {
-        var themeVersion = repository[author][theme];
-        var themeTitle = author + "/" + theme + " (v" + themeVersion + ")";
-        var img = document.createElement("img");
-        img.alt = "Screenshot of " + themeTitle;
-        img.src = baseURL + "/t/" + author + "/" + theme + "/screenshot.png";
-        img.classList.add("stack");
-        var a = document.createElement("a");
-        a.href = baseURL + "/t/" + author + "/" + theme + "/tint3rc";
-        a.target = "tint3-theme";
-        a.innerHTML = themeTitle;
-        a.classList.add("stack");
-        a.classList.add("button");
-        var li = document.createElement("li");
-        li.dataset.matching = true;
-        li.dataset.author = author;
-        li.dataset.theme = theme;
-        li.dataset.version = themeVersion;
-        li.appendChild(img);
-        li.appendChild(a);
-        themeList.appendChild(li);
-      });
-    });
   });
 })();

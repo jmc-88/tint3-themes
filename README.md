@@ -35,13 +35,13 @@ Clients can refer to uploaded themes by the canonical form
 no other theme of the same name exists from any other author).
 
   ```json
-  {
-    "author_name": {
-      "theme_name": THEME_VERSION_NUMER,
-      ...
-    },
-    ...
-  }
+  [{
+    "author": "THEME_AUTHOR",
+    "themes": [{
+      "name": "THEME_NAME",
+      "version": THEME_VERSION_NUMER,
+    }]
+  }]
   ```
 
 ## License

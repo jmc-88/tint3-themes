@@ -1,5 +1,7 @@
-{
-  "jmc-88": {
-    "default-theme": 1
-  }
-}
+[{
+  "author": "jmc-88",
+  "themes": [{
+    "name": "default-theme",
+    "version": 1
+  }]
+}]
